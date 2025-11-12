@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado de Predicción</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="result-card">
+      <h1>Resultado de la Predicción</h1>
+      <h2 class="{{ color }}">{{ prediction }}</h2>
+      <p>Probabilidad estimada: <b>{{ probability }}%</b></p>
+      <p>{{ message }}</p>
+
+      <a href="/" class="btn-secondary">Volver al inicio</a>
+    </div>
+  </div>
+</body>
+</html>
